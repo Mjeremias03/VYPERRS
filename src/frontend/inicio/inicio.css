@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --colorPrimary: #17202A;
+    --colorSecundary: #800000;
+    --colorTertiary: #FA8072;
+    --color444: #444;
+    --modal: rgba(0, 0, 0, 0.5);
+    --black: #000;
+    --white: #fff;
+}
+
+.section-flex{
+    left: calc((100vw - 1100px)/2);
+    padding: 5px;
+    position: absolute;
+    background: #000;
+    width: 1100px;
+    z-index: 5;
+    top: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+}
+
+
+.section-products{
+    background: #131212;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+* Productos Destacados
+*/
+
+/* 
+.grid-destados{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+ */
+
+.grid-destados .box{
+    border: 1px solid var(--white);
+    position: relative;
+    background: black;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+}
+
+.grid-destados .box .ribon{
+    position: absolute;
+    background: #222;
+    color: var(--white);
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    padding: 5px 5px;
+    z-index: 10;
+    left: 2px;
+    top: 2px;
+}
+
+.grid-destados .box .ribon h3{
+   
+}
+
+.grid-destados .box .imagen{
+    text-align: center;
+    padding: 15px;
+}
+
+.grid-destados .box .imagen img{
+    transition: 1s ease all;
+    transform: scale(0.8);
+    width: 100%;
+}
+
+.grid-destados .box .imagen img:hover{
+    transform: scale(1);
+}
+
+.grid-destados .box .coment{
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.grid-destados .box .coment h5{
+    text-transform: uppercase;
+    text-align: center;
+    text-wrap: wrap;
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--white);
+}
+
+.grid-destados .box .coment p{
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    color: var(--white);
+}
+
+.grid-destados .box .coment p del{
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    color: var(--white);
+}
+
+.grid-destados .box .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    width: 35px;
+    height: 100px;
+    right: 5px;
+    top: 115px;
+}
+
+.grid-destados .box .overlay .bi-heart-fill{
+    cursor: pointer;
+    fill: var(--colorSecundary);
+    height: 24px;
+    width: 24px;
+}
+
+.grid-destados .box .overlay .bi-heart-fill:hover{
+    fill: var(--colorTertiary);
+}
+
+.grid-destados .box .overlay .bi-basket-fill{
+    cursor: pointer;
+    fill: var(--colorSecundary);
+    height: 24px;
+    width: 24px;
+}
+
+.grid-destados .box .overlay .bi-basket-fill:hover{
+    fill: var(--colorTertiary);
+}
+
+.grid-destados .box .overlay .bi-eye-fill{
+    cursor: pointer;
+    fill: var(--colorSecundary);
+    height: 24px;
+    width: 24px;
+}
+
+.grid-destados .box .overlay .bi-eye-fill:hover{
+    fill: var(--colorTertiary);
+}
+
+/**
+* overlay2 -> Segunda section
+*/
+.grid-destados .box .overlay2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    width: 35px;
+    height: 100px;
+    left: 5px;
+    top: 115px;
+}
+
+.grid-destados .box .overlay2 .bi-heart-fill{
+    cursor: pointer;
+    fill: var(--colorSecundary);
+    height: 24px;
+    width: 24px;
+}
+
+.grid-destados .box .overlay2 .bi-heart-fill:hover{
+    fill: var(--colorTertiary);
+}
+
+.grid-destados .box .overlay2 .bi-basket-fill{
+    cursor: pointer;
+    fill: var(--colorSecundary);
+    height: 24px;
+    width: 24px;
+}
+
+.grid-destados .box .overlay2 .bi-basket-fill:hover{
+    fill: var(--colorTertiary);
+}
+
+.grid-destados .box .overlay2 .bi-eye-fill{
+    cursor: pointer;
+    fill: var(--colorSecundary);
+    height: 24px;
+    width: 24px;
+}
+
+.grid-destados .box .overlay2 .bi-eye-fill:hover{
+    fill: var(--colorTertiary);
+}
+
+
+
+
+/*
+* Carrousel de logos de Marcas
+*/
+@keyframes slide {
+from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: #f2f2f2;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 80px;
+    margin: 0 20px;
+}
+
+.menupie{
+    padding: 20px;
+    background: var(--black);
+    position: fixed;
+    height: 65px;
+    width: 100%;
+    z-index: 1500;
+    bottom: 0;
+}
+
+.menupie nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menupie nav a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.menupie nav a:hover{
+    color: var(--black);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .header-frontend .nav{
+        display: none;
+    }
+
+    .menuPie{
+        display: block;
+    }
+
+}

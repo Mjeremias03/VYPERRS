@@ -1,0 +1,173 @@
+
+/**
+* Título general de todas las transacciones del backend
+*/
+.backend .title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.backend .comandos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-colapso{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backend .comandos .comandos-izq{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backend .comandos .comandos-der{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backend .comandos{
+    padding: 10px;
+    margin: 10px;
+}
+
+.contenedor__pie{
+    border-top: 1px solid lightgray;
+    padding: 10px 0;
+}
+
+.backend .contenido{
+    padding: 10px;
+    margin: 10px;
+}
+
+.button_filter{
+    border: 1px solid var(--white);
+    background: var(--black);
+    border-radius: 0;
+    color: var(--white);
+    width: 80px;
+}
+
+.button_filter:hover{
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--black);
+}
+
+.button_agregar{
+    border: 1px solid var(--white);
+    background: var(--black);
+    border-radius: 0;
+    color: var(--white);
+}
+
+.button_agregar:hover{
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--black);
+}
+
+.button_editar{
+    border: 1px solid var(--white);
+    background: var(--black);
+    border-radius: 0;
+    color: var(--white);
+}
+
+.button_editar:hover{
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--black);
+}
+
+.button_borrar{
+    border: 1px solid var(--white);
+    background: var(--black);
+    border-radius: 0;
+    color: var(--white);
+    width: 90px;
+}
+
+.button_borrar:hover{
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--black);
+}
+
+.button_salir{
+    border: 1px solid var(--white);
+    background: var(--black);
+    border-radius: 0;
+    color: var(--white);
+    width: 90px;
+}
+
+.button_salir:hover{
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--black);
+}
+
+.card-grid{
+    background: #DDDDDC;
+    padding: 10px;
+}
+
+.imagenes-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.archivoCreate{
+    cursor: pointer;
+}
+
+.card{
+    padding: 5px;
+    margin: 0 10px 0 10px;
+}
+
+.card .box-photo{
+    padding: 0;
+    margin: 0;
+}
+
+.card .box-photo{
+    padding: 1px;
+}
+
+.card .box-photo img{
+    height: auto;
+    width: 210px;
+}
+
+@media (max-width: 576px) {
+
+    .backend .comandos{
+        flex-direction: column;
+    }
+
+    .imagenes-flex{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imagenes-flex .card{
+        margin-bottom: 15px;
+    }
+
+    .contenedor-colapso{
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,209 @@
+
+.shop-pageModal{
+    position: absolute;
+    background: var(--modal);
+    height: 8000px;
+    width: 100vw;
+    display: none;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+
+.shop-filter{
+    transition: 1s ease all;
+
+    position: absolute;
+    background: var(--black);
+    height: 8000px;
+    width: 400px;
+    z-index: 105;
+    left: -405px;
+    top: 0;
+}
+
+.shop-filter .contenedor-cierre{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 45px 15px 10px 15px;
+}
+
+.shop-filter .contenedor-cierre{
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+.shop-filter .box{
+    padding: 0 15px;
+}
+
+.shop-filter .box .borrar-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    padding: 5px;
+}
+
+ul li a{
+    color: var(--black);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+ul li a:hover{
+    color: var(--color444);
+}
+
+/*
+* Linea de comandos
+*/
+.shop-line-command{
+    border: 1px solid var(--color444);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.shop-line-command-der,
+.shop-line-command-izq{
+    padding: 5px 0;
+}
+
+/*
+* Grilla de productos
+*/
+.shop-flex .box{
+    border: 1px solid var(--color444);
+    position: relative;
+    background: var(--white);
+    border-radius: 5px;
+    margin: .5rem;
+}
+
+.shop-flex .box .ribon{
+    position: absolute;
+    background: var(--modal);
+    color: var(--white);
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    padding: 5px 5px;
+    z-index: 10;
+    left: 2px;
+    top: 2px;
+}
+
+.shop-flex .box .ribon h3{
+    padding-top: 7px;
+    font-size: 14px;
+}
+
+.shop-flex .box .imagen{
+    text-align: center;
+    padding: 15px;
+}
+
+.shop-flex .box .imagen img{
+    transition: 1s ease all;
+    transform: scale(0.8);
+    width: 100%;
+}
+
+.shop-flex .box .imagen img:hover{
+    transform: scale(1);
+}
+
+.shop-flex .box .coment{
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.shop-flex .box .coment h5{
+    text-transform: uppercase;
+    text-align: center;
+    text-wrap: wrap;
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--black);
+}
+
+.shop-flex .box .coment p{
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    color: var(--black);
+}
+
+.shop-flex .box .coment p del{
+    text-align: center;
+    font-size: 12px;
+    color: var(--black);
+}
+
+.shop-flex .box .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    width: 35px;
+    height: 100px;
+    right: 5px;
+    top: 110px;
+}
+
+.shop-flex .box .overlay .bi-heart-fill{
+    cursor: pointer;
+    fill: var(--colorSecundary);
+    height: 24px;
+    width: 24px;
+}
+
+.shop-flex .box .overlay .bi-heart-fill:hover{
+    fill: var(--colorTertiary);
+}
+
+.shop-flex .box .overlay .bi-basket-fill{
+    cursor: pointer;
+    fill: var(--colorSecundary);
+    height: 24px;
+    width: 24px;
+}
+
+.shop-flex .box .overlay .bi-basket-fill:hover{
+    fill: var(--colorTertiary);
+}
+
+.shop-flex .box .overlay .bi-eye-fill{
+    cursor: pointer;
+    fill: var(--colorSecundary);
+    height: 24px;
+    width: 24px;
+}
+
+.shop-flex .box .overlay .bi-eye-fill:hover{
+    fill: var(--colorTertiary);
+}
+

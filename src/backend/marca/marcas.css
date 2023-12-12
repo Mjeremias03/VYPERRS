@@ -1,0 +1,168 @@
+
+/**
+* Título general de todas las transacciones del backend
+*/
+.backend .title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.backend .comandos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backend .comandos .comandos-izq{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backend .comandos .comandos-der{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backend .comandos{
+    padding: 10px;
+    margin: 10px;
+}
+
+.backend .contenido{
+    padding: 10px;
+    margin: 10px;
+}
+
+.button_filas{
+    border: 1px solid var(--white);
+    background: var(--black);
+    border-radius: 0;
+    color: var(--white);
+    width: 80px;
+}
+
+.button_filas:hover{
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--black);
+}
+
+.button_agregar{
+    border: 1px solid var(--white);
+    background: var(--black);
+    border-radius: 0;
+    color: var(--white);
+}
+
+.button_agregar:hover{
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--black);
+}
+
+.button_editar{
+    border: 1px solid var(--white);
+    background: var(--black);
+    border-radius: 0;
+    color: var(--white);
+}
+
+.button_editar:hover{
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--black);
+}
+
+.button_borrar{
+    border: 1px solid var(--white);
+    background: var(--black);
+    border-radius: 0;
+    color: var(--white);
+    width: 90px;
+}
+
+.button_borrar:hover{
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--black);
+}
+
+.card-grid{
+    background: #DDDDDC;
+    padding: 10px;
+}
+
+.imagenes-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.archivoCreate{
+    cursor: pointer;
+}
+
+.card{
+    padding: 5px;
+    margin: 0 10px 0 10px;
+}
+
+.card .box-photo{
+    padding: 0;
+    margin: 0;
+}
+
+.card .box-photo{
+    padding: 1px;
+}
+
+.card .box-photo img{
+    height: auto;
+    width: 210px;
+}
+
+/**
+* Modal de CREATE/UPDATE/DELETE de categoría,
+* estos estilos solo impactan sobre
+* la categoría
+*/
+.card{
+    border: 2px solid #444;
+    background: #000;
+}
+
+.card-header{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.card-body form .form-label{
+    color: #FFF;
+}
+
+.archivoCreate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: #444;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+
+    .backend .comandos{
+        flex-direction: column;
+    }
+
+}

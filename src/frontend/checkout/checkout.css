@@ -1,0 +1,34 @@
+
+.checkout-datos{
+    border-right: 1px solid lightgray;
+}
+
+.checkout-datos h3{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.checkout-pagar{
+    border-left: 1px solid lightgray;
+}
+
+.checkout-pagar h3{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.frame-tarjetas{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.mp-img-fluid{
+    margin-left: 15px;
+}

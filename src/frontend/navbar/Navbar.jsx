@@ -177,7 +177,7 @@ export const Navbar = ({
           <div className="cerrar-login">
             <img
               onClick={() => handlerShowLogin()}
-              src="images/close.svg"
+              src="public/images/close.svg"
               alt="close"
             />
           </div>
@@ -189,7 +189,7 @@ export const Navbar = ({
         <div className="contenedor-cierre">
           <img
             onClick={() => handlerShowMenuVertical()}
-            src="images/close.svg"
+            src="public/images/close.svg"
             alt="close"
           />
         </div>
@@ -252,7 +252,7 @@ export const Navbar = ({
       <header className="header">
         <div className="header__izq">
           <a href="/" className="ml-8 ">
-            <img src="images/logo.png" className="object-cover" alt="logo" />
+            <img src="public/images/logo.png" className="object-cover" alt="logo" />
           </a>
           {showAmbiente === "frontend" ? (
             <div className="menu--frontend">
@@ -269,7 +269,7 @@ export const Navbar = ({
                   onClick={() => handlerShowMenuVertical()}
                   className="hamburger"
                 >
-                  <img src="images/list.svg" alt="menu" />
+                  <img src="public/images/list.svg" alt="menu" />
                 </div>
               </nav>
             </div>

@@ -177,7 +177,7 @@ export const Navbar = ({
           <div className="cerrar-login">
             <img
               onClick={() => handlerShowLogin()}
-              src="public/images/close.svg"
+              src="images/close.svg"
               alt="close"
             />
           </div>
@@ -189,7 +189,7 @@ export const Navbar = ({
         <div className="contenedor-cierre">
           <img
             onClick={() => handlerShowMenuVertical()}
-            src="public/images/close.svg"
+            src="images/close.svg"
             alt="close"
           />
         </div>

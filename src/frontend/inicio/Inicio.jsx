@@ -388,7 +388,7 @@ export const Inicio = ({
           <div className="relative h-full">
             <img
               className="w-full h-full object-cover object-center"
-              src="public/images/kongo.webp"
+              src="/kongo.webp"
               alt="11"
             />
           </div>
@@ -397,7 +397,7 @@ export const Inicio = ({
           <div className="relative h-full">
             <img
               className="w-full h-full object-cover object-center"
-              src="public/images/kongo.webp"
+              src="/kongo.webp"
               alt="11"
             />
           </div>

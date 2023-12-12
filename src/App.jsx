@@ -27,7 +27,7 @@ import Grupos from "./backend/grupo/Grupos";
 import Marcas from "./backend/marca/Marcas";
 import Cupons from "./backend/cupon/Cupons";
 
-import "./app.css";
+import "./App.css";
 
 function App() {
   /**
